@@ -1,0 +1,456 @@
+
+*{
+    -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+           margin: 5px;
+           padding: 5px;
+}
+
+
+ body{
+     font-family: 'Montserrat',sans-serif;
+ }
+
+ a{
+     text-decoration: none;
+     color: rgb(128,128,128);
+     font-size: 0.8rem;
+     padding: 2px;
+ }
+
+ a:hover{
+     color: rgb(247,84,84);
+ }
+
+ i{
+     display: inline-block;
+ }
+
+/* contenedor gran padre*/
+#contenedor{
+    display: flex;
+    flex-direction: column;
+   
+    align-content: center;
+    margin: 10px;
+}
+/* contenedor padre (cabecera) de header y título*/
+.cabecera{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    background-image: url(/imagenes/fondoheaderretocado.jpg);
+    background-size: cover;
+    background-position:bottom;
+    
+    
+
+    
+}
+/* contenedor  padre (header) donde está el logo,menú navegador y supuestamente redes sociales*/
+.header{
+    display: flex;
+    
+    align-items: center;
+    
+    
+  
+   
+}
+
+/* hijos del header*/
+.logo{
+    flex: 1 1 auto;
+   text-align: center;
+   
+    margin: 10px;
+}
+.nav{
+    flex: 5 1 auto;
+    display: flex;
+    flex-wrap: nowrap;
+   
+    
+}
+.redes{
+   flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+   padding: 0px;
+   
+  
+}
+
+/* contenedor padre del título principal */
+.titulo{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    
+    height: 50px;
+    margin:10px 20px 20px;
+    padding: 0px 10px 0px;
+   
+}
+.titulo h1{
+    background-color:rgba(0, 0, 0, 0.05);
+    color: rgb(247, 63,81,0.486);
+    font-family: 'Lora';
+    text-align: center;
+    font-size: 1.8rem;
+    flex: 1 1 auto;
+}
+blockquote{
+    quotes: "\201C""\201D" ;
+}
+blockquote::before{
+    color: rgba(247, 63, 81, 0.486);
+    content: open-quote;
+    margin-right: 0.25rem;
+    vertical-align: -0.4rem;
+}
+blockquote:after{
+    color: rgba(247,63,81, 0.486);
+    content: close-quote;
+    font-size: 2em;
+    margin-right: 0.25rem;
+    vertical-align: -0.4rem;
+}
+
+h3{
+    color: rgb(125, 157, 170);
+    font-size: 0.7rem;
+    padding: 5px;
+    margin-top: -50px;
+}
+h2{
+    font-size: 1.1rem;
+    color: rgb(44,39,39);
+    
+    padding:  0px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.elemento img{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: rgb(235, 103, 123) solid 30px;
+}
+.elemento1 img{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: rgb(235, 103, 123) solid 30px;
+}
+ .aside1  img{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: rgb(235, 103, 123) solid 30px;
+}
+.aside2 img{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: rgb(235, 103, 123) solid 30px;
+}
+/* Caja padre (centro) de main y aside */
+
+.centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    height: 100%;
+ 
+    margin: 15px 15px 15px;
+    
+}
+
+/* caja padre (main) de seccion1 seccion2 y seccion3 que se situará al aizquierda de caja centro*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    margin: 25pxpx;
+
+    
+    width: 70%;
+}
+/* hijos de main que tambien son padres ( seccion1 y seccion2*/
+.seccion1, .seccion2{
+    
+    display: flex;
+    flex-flow: row;
+    justify-content:center;
+    
+   
+    margin: 0px 15px 0px;
+    
+
+    
+}
+/* elementos hijos  de las secciones1 y 2*/
+
+.elemento{
+    
+    width: 50%;
+    height: 100%;
+    margin:  15px 10px ;
+}
+/* caja padre (seccion3) hijo de main padre*/
+.seccion3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 15px 15px;
+    
+  
+
+}
+/* hijo de padre seccion3 en caja main*/
+.elemento1{
+    height: 100%;
+    width: 100%;
+   
+    margin: 10px 10px 10px;
+}
+/* caja padre (aside) situada a la derecha dentro de centro*/
+.aside{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+   
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+/* hijos de aside padre*/
+.aside1, .aside2 {
+  
+    width: 90%;
+  
+    margin: 15px 15px 0;
+   
+    
+}
+
+/* caja footer*/
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    height: 60px;
+     margin: 15px 15px 15px;
+     padding: 0px 10px 0px;
+}
+/* hijo de caja footer*/
+.pie{
+   
+    height: 20px;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+} 
+
+
+
+
+ /* ------------ADAPTACIÓN PARA MÓVIL--------------*/ 
+
+ @media screen and (max-width: 699px) and (min-width: 500px){
+
+    /* Item primero de caja padre contenedor y a la vez caja padre de header y titulo*/
+    .cabecera{
+        height: 100%;
+        align-items: center;
+        
+    }
+
+    .header, .titulo{
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        
+    }
+    /*  Primer item de caja cabecera y a la vez es caja padre header de logo nav y redes*/
+    .header{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    /* items de caja padre header*/
+    .logo, .nav, .redes, .titular{
+        width: 80%;
+        height: 40px;
+
+    }
+    /*item de header */
+    .logo{
+        margin-top: 30px;
+    }
+    /* item de header*/
+    .nav, .redes{
+        margin-top: 25px;
+        
+    }
+    /* item de header*/
+    .redes{
+        margin-bottom: 30px;
+    }
+    /* Segundo item  de caja cabecera y a la vez caja padre del item titular*/
+
+    .titulo{
+        margin-bottom: 30px;
+    }
+    /*  item de caja apadre titulo*/
+    .titular{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    /* Item segundo de caja padre contenedor y a la vez caja padre de main y aside*/
+    .centro{
+       
+        flex-direction: column;
+        justify-content: center;
+        
+        align-content:center;
+        align-items: center;
+        height: 100%;
+        width: 100%; 
+       
+    } 
+    /* caja padre de seccion1 seccion2 seccion3 y item de caja padre centro*/
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        
+       }
+        
+    /* items de la caja padre main*/
+    .seccion1, .seccion2, .seccion3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        
+    }
+    
+    .seccion1{
+        margin-top: 20px;
+        margin-bottom:20px ;
+        height: 100%;
+    }
+    /* elementos de los itmes de seccion1 y seccion2*/
+    .elemento{
+        width:80%;
+        margin-top: 30px;
+        height: 100%;
+        
+    }
+    /* elemento del item seccion3*/
+    .elemento1{
+        height: 100%;
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+    /* Item de caja padre centro y a la vex caja padre de aside1 y aside2*/    
+    .aside{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0px 30px 35px;
+    }
+    /* Items de la caja padre aside*/
+    .aside1, .aside2{
+        height: 100%;
+        width: 80%;
+        
+        }
+
+    .aside1{
+        margin: 30px 20px 20px;
+    } 
+    .aside2{
+        margin-bottom: 30px;
+    }   
+    /* Item último de caja padre contenedor y a la vez padre del item pi*/
+    .footer{
+        height: 100%;
+        margin: 20px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        
+
+    }
+    .pie{
+        height: 40px;
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}         
+/*----------ADAPTACION PARA TABLET------------------*/    
+@media screen and (max-width: 1024px) and (min-width: 700px){
+
+    /* caja pdre centro de main y aside*/
+    .centro{
+       
+        flex-direction: column;
+        justify-content: center;
+        
+        align-content:center;
+        align-items: center;
+        height: 100%; 
+       
+    } 
+    /* caja main*/
+    .main{
+        width: 95%;
+    }
+    /* elementos de los itmes seccion1 seccion2 seccion3 de caja padre main*/
+    .elemento{
+        width: 95%;
+    }
+    /* Item caja centro y padre a la vez de aside1 y aside2 */
+    .aside{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        width:95%;
+        margin: 0px 20px 20px;
+    }
+    .aside1, .aside2{
+        width: 95%;
+    }
+    .aside2{
+        margin-bottom: 20px;
+    }
+
+}
