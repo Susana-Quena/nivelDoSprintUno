@@ -132,30 +132,14 @@ h2{
     text-transform: uppercase;
     font-weight: bolder;
 }
-.elemento img{
+
+.main img, .aside img{
     padding: 0px;
     margin: 0px;
     width: 100%;
     border-bottom: rgb(235, 103, 123) solid 30px;
 }
-.elemento1 img{
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    border-bottom: rgb(235, 103, 123) solid 30px;
-}
- .aside1  img{
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    border-bottom: rgb(235, 103, 123) solid 30px;
-}
-.aside2 img{
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    border-bottom: rgb(235, 103, 123) solid 30px;
-}
+
 /* Caja padre (centro) de main y aside */
 
 .centro{
@@ -175,7 +159,7 @@ h2{
     flex-direction: column;
     justify-content: center;
    
-    margin: 25pxpx;
+    margin: 25px;
 
     
     width: 70%;
